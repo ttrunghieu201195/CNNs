@@ -26,7 +26,7 @@ batch_size = 128
 display_step = 10
 
 # Network Parameters
-n_input = 128*128 # MNIST data input (img shape: 28*28)
+n_input = 128*128 # MNIST data input (img shape: 128*128)
 n_classes = 14 # MNIST total classes (0-9 digits)
 dropout = 0.75 # Dropout, probability to keep units
 
@@ -116,33 +116,6 @@ biases = {
     'out': tf.Variable(tf.random_normal([n_classes]))
 }
 
-# dataset1 = next_batch(batch_size,train_data)
-# x = np.array([i[0] for i in dataset1])
-
-# x = tf.cast(x,tf.float32)
-
-# print("Before: ",x.shape)
-
-# x = tf.reshape(x, shape=[-1, 128, 128, 1])
-
-# print("After: ",x.shape)
-
-# print("----Conv1----")
-# conv1 = conv2d(x, weights['wc1'], biases['bc1'])
-
-# print("Conv: ",conv1.shape)
-
-# conv1 = maxpool2d(conv1, k=2)
-# print("Maxpool1: ",conv1.shape)
-
-# print("----Conv2----")
-# # Convolution Layer
-# conv2 = conv2d(conv1, weights['wc2'], biases['bc2'])
-# print("conv2: ",conv2.shape)
-# # Max Pooling (down-sampling)
-# conv2 = maxpool2d(conv2, k=2)
-# print("Maxpool: ",conv2.shape)
-
 
 # Construct model
 pred = conv_net(x, weights, biases, keep_prob)
@@ -184,6 +157,7 @@ with tf.Session() as sess:
         step += 1
     print("Optimization Finished!")
     saver.save(sess,"conv_net_model")
+    
     test = next_batch(batch_size,test_data)
 
     # Calculate accuracy for 256 mnist test images
