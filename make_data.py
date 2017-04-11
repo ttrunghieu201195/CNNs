@@ -44,11 +44,8 @@ def create_train_data():
 	print(label)
     shuffle(training_data)
     print(training_data[0])
-    # np.save('eval_data.npy', training_data)
-    print("Create train data success!!!")
-    # data=training_data[0][0].astype("uint8")
-    # plt.imshow(data)
-    # plt.show()
+    np.save('eval_data.npy', training_data)
+    print("Create train data success!!!"
     return training_data
 
 def process_test_data():
@@ -56,7 +53,6 @@ def process_test_data():
     for folder in test_list:
     	for img in tqdm(os.listdir(folder)):
 	        path = os.path.join(folder,img)
-	        # img_num = img.split('.')[0]
 	        img = cv2.imread(path,cv2.IMREAD_GRAYSCALE)
 	        img = cv2.resize(img, (IMG_SIZE,IMG_SIZE))
 	        img = img.reshape(IMG_SIZE*IMG_SIZE)
@@ -67,7 +63,7 @@ def process_test_data():
     print("Create test data success!!!")
     return testing_data
 
-# train_data = create_train_data()
+train_data = create_train_data()
 
 test_data = process_test_data()
 
