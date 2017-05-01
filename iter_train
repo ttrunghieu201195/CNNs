@@ -1,0 +1,28 @@
+Epoch: 0001 cost= 126783850.769230783 Accuracy=  0.46094
+Epoch: 0002 cost= 25423076.346153837 Accuracy=  0.75781
+Epoch: 0003 cost= 10006550.730769232 Accuracy=  0.77344
+Epoch: 0004 cost= 6252659.086538461 Accuracy=  0.92188
+Epoch: 0005 cost= 4456604.163461538 Accuracy=  0.88281
+Epoch: 0006 cost= 2897266.682692308 Accuracy=  0.93750
+Epoch: 0007 cost= 2381474.593750000 Accuracy=  0.89062
+Epoch: 0008 cost= 1589269.338942308 Accuracy=  0.98438
+Epoch: 0009 cost= 1381485.330528846 Accuracy=  0.94531
+Epoch: 0010 cost= 1002013.096153846 Accuracy=  0.96094
+Epoch: 0011 cost= 767528.904447115 Accuracy=  0.94531
+Epoch: 0012 cost= 766947.146634615 Accuracy=  0.95312
+Epoch: 0013 cost= 596850.800480769 Accuracy=  0.97656
+Epoch: 0014 cost= 393042.260817308 Accuracy=  0.96094
+Epoch: 0015 cost= 302846.979567308 Accuracy=  0.96875
+Epoch: 0016 cost= 280196.221153846 Accuracy=  0.98438
+Epoch: 0017 cost= 265115.153846154 Accuracy=  0.99219
+Epoch: 0018 cost= 213998.848557692 Accuracy=  0.99219
+Epoch: 0019 cost= 130505.076923077 Accuracy=  0.98438
+Epoch: 0020 cost= 251692.210336538 Accuracy=  0.98438
+Epoch: 0021 cost= 189154.820913462 Accuracy=  0.98438
+Epoch: 0022 cost= 227086.477163462 Accuracy=  0.99219
+Epoch: 0023 cost= 54225.128605769 Accuracy=  1.00000
+Epoch: 0024 cost= 143154.507211538 Accuracy=  0.99219
+Epoch: 0025 cost= 174422.290865385 Accuracy=  0.99219
+Optimization Finished!
+Testing Accuracy: 1.0
+
